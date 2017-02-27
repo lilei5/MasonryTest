@@ -1,0 +1,16 @@
+
+
+//
+//  MasonryTest-PrefixHeader.pch
+//  MasnoryTest
+//
+//  Created by lilei on 17/2/27.
+//  Copyright © 2017年 李磊www. All rights reserved.
+//
+
+#ifndef MasonryTest_PrefixHeader_pch
+#define MasonryTest_PrefixHeader_pch
+
+#define MAS_SHORTHAND_GLOBALS
+
+#endif /* MasonryTest_PrefixHeader_pch */
