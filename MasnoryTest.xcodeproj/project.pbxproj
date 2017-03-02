@@ -27,6 +27,14 @@
 		A40DD1AD1E57383A00F7CFC2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A40DD19F1E57383A00F7CFC2 /* View+MASAdditions.m */; };
 		A40DD1AE1E57383A00F7CFC2 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A40DD1A21E57383A00F7CFC2 /* ViewController+MASAdditions.m */; };
 		A40DD1AF1E57383A00F7CFC2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A40DD1A31E57383A00F7CFC2 /* README.md */; };
+		A48EF70C1E67AAFA00EFBB7C /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EF70B1E67AAFA00EFBB7C /* TestCell.m */; };
+		A48EF7191E67B2A500EFBB7C /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EF7101E67B2A500EFBB7C /* UITableView+FDIndexPathHeightCache.m */; };
+		A48EF71A1E67B2A500EFBB7C /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EF7121E67B2A500EFBB7C /* UITableView+FDKeyedHeightCache.m */; };
+		A48EF71B1E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EF7141E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell.m */; };
+		A48EF71C1E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EF7161E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		A48EF71D1E67B2A500EFBB7C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A48EF7171E67B2A500EFBB7C /* LICENSE */; };
+		A48EF71E1E67B2A500EFBB7C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A48EF7181E67B2A500EFBB7C /* README.md */; };
+		A48EF7201E67B50700EFBB7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A48EF71F1E67B50700EFBB7C /* logo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,19 @@
 		A40DD1A21E57383A00F7CFC2 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		A40DD1A31E57383A00F7CFC2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A41C9B5F1E6401D900173749 /* MasonryTest-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasonryTest-PrefixHeader.pch"; sourceTree = "<group>"; };
+		A48EF70A1E67AAFA00EFBB7C /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		A48EF70B1E67AAFA00EFBB7C /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		A48EF70F1E67B2A500EFBB7C /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		A48EF7101E67B2A500EFBB7C /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		A48EF7111E67B2A500EFBB7C /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		A48EF7121E67B2A500EFBB7C /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		A48EF7131E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		A48EF7141E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		A48EF7151E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		A48EF7161E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		A48EF7171E67B2A500EFBB7C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A48EF7181E67B2A500EFBB7C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A48EF71F1E67B50700EFBB7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,12 +162,16 @@
 		A40DD1531E5737F900F7CFC2 /* MasnoryTest */ = {
 			isa = PBXGroup;
 			children = (
+				A48EF70D1E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell */,
 				A40DD1871E57383A00F7CFC2 /* Masonry */,
 				A40DD1571E5737F900F7CFC2 /* AppDelegate.h */,
 				A40DD1581E5737F900F7CFC2 /* AppDelegate.m */,
 				A40DD15A1E5737F900F7CFC2 /* ViewController.h */,
 				A40DD15B1E5737F900F7CFC2 /* ViewController.m */,
 				A40DD15D1E5737F900F7CFC2 /* Main.storyboard */,
+				A48EF70A1E67AAFA00EFBB7C /* TestCell.h */,
+				A48EF70B1E67AAFA00EFBB7C /* TestCell.m */,
+				A48EF71F1E67B50700EFBB7C /* logo@2x.png */,
 				A40DD1601E5737F900F7CFC2 /* Assets.xcassets */,
 				A40DD1621E5737F900F7CFC2 /* LaunchScreen.storyboard */,
 				A40DD1651E5737F900F7CFC2 /* Info.plist */,
@@ -222,6 +247,31 @@
 				A40DD1A21E57383A00F7CFC2 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		A48EF70D1E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				A48EF70E1E67B2A500EFBB7C /* Classes */,
+				A48EF7171E67B2A500EFBB7C /* LICENSE */,
+				A48EF7181E67B2A500EFBB7C /* README.md */,
+			);
+			path = "UITableView+FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
+		A48EF70E1E67B2A500EFBB7C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A48EF70F1E67B2A500EFBB7C /* UITableView+FDIndexPathHeightCache.h */,
+				A48EF7101E67B2A500EFBB7C /* UITableView+FDIndexPathHeightCache.m */,
+				A48EF7111E67B2A500EFBB7C /* UITableView+FDKeyedHeightCache.h */,
+				A48EF7121E67B2A500EFBB7C /* UITableView+FDKeyedHeightCache.m */,
+				A48EF7131E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell.h */,
+				A48EF7141E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell.m */,
+				A48EF7151E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCellDebug.h */,
+				A48EF7161E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +385,8 @@
 				A40DD1611E5737F900F7CFC2 /* Assets.xcassets in Resources */,
 				A40DD1A41E57383A00F7CFC2 /* LICENSE in Resources */,
 				A40DD15F1E5737F900F7CFC2 /* Main.storyboard in Resources */,
+				A48EF71D1E67B2A500EFBB7C /* LICENSE in Resources */,
+				A48EF7201E67B50700EFBB7C /* logo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,11 +413,16 @@
 			files = (
 				A40DD1AC1E57383A00F7CFC2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				A40DD1AA1E57383A00F7CFC2 /* MASViewConstraint.m in Sources */,
+				A48EF71E1E67B2A500EFBB7C /* README.md in Sources */,
 				A40DD1A51E57383A00F7CFC2 /* MASCompositeConstraint.m in Sources */,
 				A40DD1AB1E57383A00F7CFC2 /* NSArray+MASAdditions.m in Sources */,
 				A40DD15C1E5737F900F7CFC2 /* ViewController.m in Sources */,
+				A48EF71A1E67B2A500EFBB7C /* UITableView+FDKeyedHeightCache.m in Sources */,
 				A40DD1591E5737F900F7CFC2 /* AppDelegate.m in Sources */,
 				A40DD1A81E57383A00F7CFC2 /* MASLayoutConstraint.m in Sources */,
+				A48EF7191E67B2A500EFBB7C /* UITableView+FDIndexPathHeightCache.m in Sources */,
+				A48EF71B1E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				A48EF70C1E67AAFA00EFBB7C /* TestCell.m in Sources */,
 				A40DD1561E5737F900F7CFC2 /* main.m in Sources */,
 				A40DD1AE1E57383A00F7CFC2 /* ViewController+MASAdditions.m in Sources */,
 				A40DD1AD1E57383A00F7CFC2 /* View+MASAdditions.m in Sources */,
@@ -373,6 +430,7 @@
 				A40DD1A91E57383A00F7CFC2 /* MASViewAttribute.m in Sources */,
 				A40DD1A61E57383A00F7CFC2 /* MASConstraint.m in Sources */,
 				A40DD1A71E57383A00F7CFC2 /* MASConstraintMaker.m in Sources */,
+				A48EF71C1E67B2A500EFBB7C /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

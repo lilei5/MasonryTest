@@ -8,14 +8,10 @@
 
 #import "ViewController.h"
 #import "Masonry.h"
+#import "TestCell.h"
+#import "UITableView+FDTemplateLayoutCell.h"
 
-
-
-@interface ViewController ()
-
-
-@property (nonatomic, strong) UILabel *shortLabel;
-@property (nonatomic, strong) UILabel *longLabel;
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
 @end
@@ -24,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+                请打开不同的注释，查看不同的效果
     
     
     //  三种添加约束的方法比较
@@ -39,7 +37,10 @@
 //    [self equalSpacing];
     
     // scrollView
-    [self scrollViewTest];
+//    [self scrollViewTest];
+    
+    // cell自适应高度
+    [self cellAutoHeight];
     
 }
 
@@ -303,5 +304,51 @@
     }];
 
 }
+#pragma mark 自适应cell高度
+NSMutableArray *_dataArray;
+- (void)cellAutoHeight{
+    
+    NSArray *array = @[@"两栖蛙蛙教育平台",
+                       @"两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台",
+                       @"两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台",
+                       @"两栖蛙蛙教育平台两栖蛙蛙教育平台",
+                       @"两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台",
+                       @"两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台",
+                       @"两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台两栖蛙蛙教育平台"];
+    _dataArray = [NSMutableArray array];
+    for (NSInteger i = 0; i<200; i++) {
+        [_dataArray addObject:array[arc4random()%array.count]];
+    }
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    [self.view addSubview:tableView];
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+//    tableView.estimatedRowHeight = 100;//一个估算值
+//    tableView.rowHeight = UITableViewAutomaticDimension;//可以不设置，ios8之后默认值
+    [tableView registerClass:[TestCell class] forCellReuseIdentifier:@"TestCell"];
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    TestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TestCell"];
+    [cell configCellWithImageStr:@"logo" contentStr:_dataArray[indexPath.row]];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return  [tableView fd_heightForCellWithIdentifier:@"TestCell" cacheByIndexPath:indexPath configuration:^(TestCell *cell) {
+        // 这里调用cell子视图赋值的方法
+        [cell configCellWithImageStr:@"logo" contentStr:_dataArray[indexPath.row]];
+    }];
+}
+
 
 @end
